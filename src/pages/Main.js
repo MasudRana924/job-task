@@ -1,10 +1,9 @@
 import React from 'react';
-import Banner from '../components/banner/Banner';
-
+import Landing from '../components/banner/landing/Landing';
 const Main = () => {
     return (
         <div>
-        <Banner></Banner>
+            <Landing></Landing>
         </div>
     );
 };
