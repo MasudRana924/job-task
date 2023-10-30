@@ -8,9 +8,20 @@ import {
 import Navbar from './common/Navbar';
 import Main from './pages/Main';
 import Footer from './common/Footer';
+import { useEffect, useState } from 'react';
+import Preloader from './components/loader/Preloader';
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  })
   return (
-    <div className="App">
+    <div>
+      {loading ? <div>
+      <Preloader></Preloader>
+    </div> :<div className="App">
     <BrowserRouter>
      <Navbar></Navbar>
       <Routes>
@@ -19,8 +30,12 @@ function App() {
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
-  </div>
+  </div>}
+    </div>
+    
   );
 }
 
 export default App;
+
+
