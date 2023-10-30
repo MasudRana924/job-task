@@ -10,7 +10,6 @@ const About = () => {
         <section class="bg-white dark:bg-gray-900 md:mt-12 lg:mt-24">
             <div class="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
                 <div class="flex justify-center xl:w-1/2" data-aos="fade-right">
-                    {/* <img class="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover r" src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" /> */}
                     <Lottie animationData={phoneAnimation} class="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover r"></Lottie>
                 </div>
 
